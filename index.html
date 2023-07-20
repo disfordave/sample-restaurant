@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Restaurant</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="content">
+
+    
+    <header class="header" style=" z-index: 10; position: absolute; box-sizing: border-box; width: 100%;">
+        <h1 style="color: aliceblue;">Sample</h1>
+        <ul class="nav">
+            <li class="desktop-menu"><a href="#1">Menu</a></li>
+            <li class="desktop-menu"><a href="#2">About Us</a></li>
+            <li class="desktop-menu"><a href="#3">Contact</a></li>
+            <li id="mobile-menu-button"><a href="#4" onclick="MobileMenu()">Menus</a></li>
+            <li id="mobile-menu-close-button"><a href="#4" onclick="MobileMenuClose()">Close</a></li>
+        </ul>
+    </header>
+    <nav id="mobile-menu">
+        <ul class="nav">
+            <li class="menu"><a href="#1">Menu</a></li>
+            <li class="menu"><a href="#2">About Us</a></li>
+            <li class="menu"><a href="#3">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="gfg" style="position: relative; display: flex; justify-content: center; align-items: center;">
+        <img src="./img/foods.jpg" style="z-index: -1; width: 100%; filter: brightness(50%);">
+        <h2 style="position: absolute; text-align: center; color: aliceblue; font-size: 7vw;">Welcome!</h2>    
+    </div>
+    <section class="section-one">
+        <div class="textbox-left">
+            <h2>Thank you.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Duis convallis convallis tellus id. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Metus dictum at tempor commodo ullamcorper a lacus. Arcu ac tortor dignissim convallis aenean et.</p>
+            <p>Sagittis eu volutpat odio facilisis mauris. Mattis vulputate enim nulla aliquet porttitor lacus. Posuere sollicitudin aliquam ultrices sagittis orci. Sed euismod nisi porta lorem mollis aliquam. Eget felis eget nunc lobortis mattis. Tempor nec feugiat nisl pretium. In hendrerit gravida rutrum quisque non tellus orci. Fermentum posuere urna nec tincidunt praesent. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Urna neque viverra justo nec ultrices.</p>
+        </div>
+        <img src="./img/food2.jpg" alt="food2" class="s1-img">
+    </section>
+    <section class="section-two">
+        <video class="s1-img" autoplay loop>
+            <source src="./img/mount.mp4" type="video/mp4">
+            <!--<source src="movie.ogg" type="video/ogg">-->>
+          Your browser does not support the video tag.
+          </video>
+        <div class="textbox-left">
+            <h2>Thank you.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt id aliquet risus feugiat in ante metus dictum. Duis convallis convallis tellus id. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Metus dictum at tempor commodo ullamcorper a lacus. Arcu ac tortor dignissim convallis aenean et.</p>
+            <p>Sagittis eu volutpat odio facilisis mauris. Mattis vulputate enim nulla aliquet porttitor lacus. Posuere sollicitudin aliquam ultrices sagittis orci. Sed euismod nisi porta lorem mollis aliquam. Eget felis eget nunc lobortis mattis. Tempor nec feugiat nisl pretium. In hendrerit gravida rutrum quisque non tellus orci. Fermentum posuere urna nec tincidunt praesent. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Urna neque viverra justo nec ultrices.</p>
+        
+        </div>
+        
+    </section>
+    <footer style="text-align: center; background-color:bisque; box-sizing: border-box; width: 100%;">
+        <p>2023</p>
+    </footer>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

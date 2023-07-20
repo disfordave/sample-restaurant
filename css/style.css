@@ -1,0 +1,151 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+    
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+header > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: aliceblue;
+    padding: 0 10rem 0 10rem;
+    
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#mobile-menu-button {
+    display: none;
+}
+
+#mobile-menu-close-button {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+    background-color:crimson;
+    color: aliceblue;
+    padding: 10rem 10rem 0 10rem;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+#mobile-menu > ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.section-one {
+    background-color: crimson;
+    color: aliceblue;
+    padding: 5rem 10rem 5rem 10rem;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-two {
+    background-color: midnightblue;
+    color: aliceblue;
+    padding: 5rem 10rem 5rem 10rem;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.s1-img {
+    width: 50%;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1100px)
+ {
+    .header { 
+        padding: 0 1rem 0 1rem;
+    }
+
+    .section-one, .section-two { 
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    
+    #mobile-menu {
+        padding: 5rem 1rem 0 1rem;;
+    }
+}
+
+
+
+@media (max-width: 650px)
+ {
+    #mobile-menu-button {
+        display: inline;
+    }
+
+    .section-one { 
+        flex-wrap: wrap-reverse;
+        gap: 1rem;
+
+    }
+
+    .section-two { 
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .s1-img {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 450px)
+ {
+
+    h1 {
+        font-size: 3vh;
+    }
+
+    
+}
