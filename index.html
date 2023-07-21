@@ -10,23 +10,28 @@
 </head>
 <body>
     <div class="content">
-    <header class="header">
+
+    <!--Header and navigation bar-->
+    <header id="header">
         <h1 id="logo">Sample</h1>
-        <ul class="nav">
-            <li class="desktop-menu"><a href="#1">Menu</a></li>
-            <li class="desktop-menu"><a href="#2">About Us</a></li>
-            <li class="desktop-menu"><a href="#3">Contact</a></li>
-            <li id="mobile-menu-button"><a onclick="MobileMenu();">Menu</a></li>
+        <ul id="desktop-nav" class="nav">
+            <li class="desktop-menu"><a class="nav-a" href="#1">Menu</a></li>
+            <li class="desktop-menu"><a class="nav-a" href="#2">About Us</a></li>
+            <li class="desktop-menu"><a class="nav-a" href="#3">Contact</a></li>
+            <li id="mobile-menu-button"><a class="nav-a mobile-menu-button-text" onclick="MobileMenu();">Menu</a></li>
             <li id="mobile-menu-close-button"><a onclick="MobileMenuClose()">Close</a></li>
         </ul>
     </header>
     <nav id="mobile-menu">
         <ul class="nav">
-            <li class="menu"><a href="#1">Menu</a></li>
-            <li class="menu"><a href="#2">About Us</a></li>
-            <li class="menu"><a href="#3">Contact</a></li>
+            <li class="menu"><a class="nav-a" href="#1">Menu</a></li>
+            <li class="menu"><a class="nav-a" href="#2">About Us</a></li>
+            <li class="menu"><a class="nav-a" href="#3">Contact</a></li>
         </ul>
     </nav>
+    <!--Header and navigation bar end-->
+    
+    <!--Main Media and introduction-->
     <div class="gfg">
         <h2 class="main-h2">The Art of Food</h2>
         <p class="main-p">Taste the feeling.</p>
@@ -36,7 +41,8 @@
         <source src="./img/cooking.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <!-- <img src="./img/foods.jpg" class="main-img" oncontextmenu = "return false;"> -->
+    <!--Main Media and introduction end-->
+
     <section class="section-one">
         <div class="textbox-left">
             <h2>Hello everyone.</h2>
@@ -60,13 +66,12 @@
                 nec tincidunt praesent. Praesent elementum facilisis leo vel fringilla 
                 est ullamcorper eget nulla. Urna neque viverra justo nec ultrices.</p>
         </div>
-        <img src="./img/food2.jpg" alt="food2" class="s1-img" oncontextmenu = "return false;">
+        <img src="./img/foods.jpg" alt="food2" class="s1-img" oncontextmenu = "return false;">
     </section>
     <section class="section-two">
-        <video class="s1-img" autoplay loop muted playsinline oncontextmenu = "return false;">
-            <source src="./img/mount.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+        <img src="./img/food2.jpg" alt="food2" class="s1-img" oncontextmenu = "return false;">
+        
+        
         <div class="textbox-left">
             <h2>Thank you.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
