@@ -2,7 +2,7 @@ body {
     font-family: Inter, Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: aliceblue;
-
+    
 
 }
 
@@ -154,8 +154,8 @@ footer a {
 }
 
 .section-two {
-    background-color:gold;
-    color: aliceblue;
+    background-color:rgb(233, 91, 75);
+    color:aliceblue;
     padding: 5rem 10rem 5rem 10rem;
     display: flex;
     box-sizing: border-box;
