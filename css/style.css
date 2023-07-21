@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Inter, Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: aliceblue;
     
@@ -22,6 +22,10 @@ header > ul {
    
 }
 
+#logo {
+    color: aliceblue;
+}
+
 .header {
     display:flex;
     justify-content: space-between;
@@ -29,12 +33,56 @@ header > ul {
     
     color: aliceblue;
     padding: 0 10rem 0 10rem;
+
+    z-index: 10; 
+    position: absolute; 
+    box-sizing: border-box; 
+    width: 100%;
     
 }
 
 a {
     text-decoration: none;
     color: aliceblue;
+}
+
+.gfg {
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.main-img {
+    object-fit: cover; 
+    z-index: -1; 
+    width: 100%; 
+    height: 90vh; 
+    filter: brightness(50%);
+}
+
+.main-h2 {
+    position: absolute; 
+    text-align: center; 
+    color: aliceblue;
+}
+
+.scroll-top {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center; 
+    box-sizing: border-box; 
+    width: 100%;
+    text-align:left;
+    padding: 1rem 10rem 1rem 10rem;
+} 
+
+footer a {
+    color: black;
 }
 
 #mobile-menu-button {
@@ -45,6 +93,11 @@ a {
 #mobile-menu-close-button {
     display: none;
     cursor: pointer;
+    
+}
+
+#mobile-menu-close-button a {
+    color: black;
 }
 
 #mobile-menu {
@@ -87,7 +140,7 @@ a {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .section-two {
@@ -99,7 +152,7 @@ a {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .s1-img {
@@ -108,12 +161,12 @@ a {
 }
 
 .textbox-left {
-    flex: 1 1 50%;
+    flex: 1;
 }
 
 @media (max-width: 1100px)
  {
-    .header { 
+    .header, footer { 
         padding: 0 1rem 0 1rem;
     }
 
