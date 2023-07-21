@@ -177,6 +177,7 @@ footer a {
 .textbox-left {
     flex: 1;
     line-height: 1.5;
+    font-size: 18px;
 }
 
 /*Media queries*/
