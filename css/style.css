@@ -51,13 +51,14 @@ a {
     display: flex; 
     justify-content: center; 
     align-items: center;
+    top: 45vh;
 }
 
 .main-img {
     object-fit: cover; 
     z-index: -1; 
     width: 100%; 
-    height: 90vh; 
+    min-height: 90vh; 
     filter: brightness(50%);
 }
 
