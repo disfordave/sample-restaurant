@@ -5,11 +5,39 @@ console.log(vw)
 
 function checkWindowSize() {
     vw  = document.documentElement.clientWidth;
-    if(vw <= 650 ) {
-        document.getElementById("mobile-menu-button").style.display = "inline";
-        document.getElementById("mobile-menu-close-button").style.display = "none";
+    if(vw <= 650) {
+        // media width: mobile
+        document.getElementsByClassName("nav-a")[0].style.display = "none"
+        document.getElementsByClassName("nav-a")[1].style.display = "none"
+        document.getElementsByClassName("nav-a")[2].style.display = "none"
+        // document.getElementById("mobile-menu-button").style.display = "inline";
+        // document.getElementById("mobile-menu-close-button").style.display = "none";
+        if(document.getElementById("mobile-menu").style.display === "block") {
+            // When the mobile menu is enabled
+            document.getElementById("mobile-menu-button").style.display = "none";
+            document.getElementById("mobile-menu-close-button").style.display = "inline";
+        } else {
+            // When the mobile menu is disabled
+            document.getElementById("mobile-menu-button").style.display = "inline";
+            document.getElementById("mobile-menu-close-button").style.display = "none";
+        }
     } else {
-        DisableMobileButton();
+        // media width: desktop
+        if(document.getElementById("mobile-menu").style.display === "block") {
+            // When the mobile menu is enabled
+            document.getElementById("mobile-menu-button").style.display = "none";
+            document.getElementById("mobile-menu-close-button").style.display = "inline";
+            document.getElementsByClassName("nav-a")[0].style.display = "none"
+            document.getElementsByClassName("nav-a")[1].style.display = "none"
+            document.getElementsByClassName("nav-a")[2].style.display = "none"
+        } else {
+            // When the mobile menu is disabled
+            DisableMobileButton();
+            document.getElementsByClassName("nav-a")[0].style.display = "inline"
+            document.getElementsByClassName("nav-a")[1].style.display = "inline"
+            document.getElementsByClassName("nav-a")[2].style.display = "inline"
+        }
+        
     }
 }
 
@@ -37,6 +65,7 @@ function MobileMenuClose() {
         document.getElementById("logo").style.color = "aliceblue";
     }
     document.body.style.overflow = "auto";
+    checkWindowSize();
 }
 
 // Call checkWindowSize function whenever the window is resized

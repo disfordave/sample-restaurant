@@ -35,7 +35,7 @@ body {
     
     padding: 0 10rem 0 10rem;
 
-    z-index: 10; 
+    z-index: 15; 
     position: fixed; 
     box-sizing: border-box; 
     width: 100%;
@@ -123,7 +123,7 @@ footer a {
     padding: 10rem 10rem 0 10rem;
     height: 100vh;
     width: 100%;
-    z-index: 5;
+    z-index: 12;
     position: absolute;
     box-sizing: border-box;
     overflow-y: auto;
