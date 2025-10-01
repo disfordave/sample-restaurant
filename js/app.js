@@ -62,7 +62,7 @@ function MobileMenuClose() {
     if (document.documentElement.scrollTop > 50) {
         document.getElementById("logo").style.color = "black";
     } else {
-        document.getElementById("logo").style.color = "aliceblue";
+        document.getElementById("logo").style.color = "white";
     }
     document.body.style.overflow = "auto";
     checkWindowSize();
@@ -79,7 +79,7 @@ window.onscroll = function() {onWindowScroll()};
 
 function onWindowScroll() {
     if (document.documentElement.scrollTop > 50) {
-        document.getElementById("header").style.backgroundColor = "aliceblue";
+        document.getElementById("header").style.backgroundColor = "white";
         document.getElementById("logo").style.color = "black";
         document.getElementsByClassName("nav-a")[0].style.color = "black"
         document.getElementsByClassName("nav-a")[1].style.color = "black"
@@ -88,11 +88,11 @@ function onWindowScroll() {
         
     } else {
         document.getElementById("header").style.backgroundColor = "transparent";
-        document.getElementById("logo").style.color = "aliceblue";
-        document.getElementsByClassName("nav-a")[0].style.color = "aliceblue"
-        document.getElementsByClassName("nav-a")[1].style.color = "aliceblue"
-        document.getElementsByClassName("nav-a")[2].style.color = "aliceblue"
-        document.getElementsByClassName("nav-a")[3].style.color = "aliceblue"
+        document.getElementById("logo").style.color = "white";
+        document.getElementsByClassName("nav-a")[0].style.color = "white"
+        document.getElementsByClassName("nav-a")[1].style.color = "white"
+        document.getElementsByClassName("nav-a")[2].style.color = "white"
+        document.getElementsByClassName("nav-a")[3].style.color = "white"
         
     }
 }
